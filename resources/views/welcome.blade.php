@@ -32,13 +32,13 @@
             }
 
             .position-ref {
-                position: relative;
+                position: absolute;
             }
 
             .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
+                position: relative;
+                right: 20pxpx;
+                top: 15px;
             }
 
             .content {
@@ -46,11 +46,11 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 90px;
             }
 
             .links > a {
-                color: #636b6f;
+                color: green;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 600;
@@ -60,7 +60,7 @@
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+                margin-bottom: 40px;
             }
         </style>
     </head>
@@ -69,10 +69,10 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">JHome</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                        <a href="{{ route('login') }}">JLogin</a>
+                        <a href="{{ route('register') }}">JRegister</a>
                     @endauth
                 </div>
             @endif
